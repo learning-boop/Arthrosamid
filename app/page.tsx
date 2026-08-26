@@ -82,7 +82,7 @@ export default function Home() {
         <div className="scroll-shade" /><div className="shell scroll-content scroll-content-left">
           <p className="eyebrow eyebrow-light">Knee arthritis</p>
           <h2>Understand the pain before choosing treatment.</h2>
-          <p className="scroll-lede">Knee osteoarthritis may cause pain, stiffness, swelling and reduced movement. It can affect stairs, walking, kneeling, driving, sleep, work and family life.</p>
+          <p className="scroll-lede">Knee osteoarthritis may cause pain, stiffness, swelling and reduced movement. It can affect stairs, driving, sleep, work and family life.</p>
           <div className="arthritis-summary"><h3>How <ArthrosamidName /> may help</h3><p>It is used to help manage knee osteoarthritis symptoms in appropriately selected adults. It does not reverse arthritis or regrow cartilage, and suitability requires an individual assessment.</p></div>
           <div className="review-strip"><div><span>Google reviews</span><strong>Read current patient experiences directly</strong><p>Reviews describe individual experiences; they are not clinical evidence and cannot predict your result.</p></div><a href="https://www.google.com/search?q=Joint+Care+Clinics+Arthrosamid+reviews" target="_blank" rel="noreferrer">Open Google reviews ↗︎</a></div>
           <div className="scroll-actions"><Link className="button button-outline" href="/knee-arthritis">More about knee arthritis →</Link></div>
@@ -93,7 +93,7 @@ export default function Home() {
         <div className="scroll-shade" /><div className="shell scroll-content scroll-content-right">
           <p className="eyebrow eyebrow-light">For knees that work hard</p>
           <h2>Your job may be different. <em>Your need to keep moving is shared.</em></h2>
-          <p className="scroll-lede">Knee osteoarthritis can affect people across practical, professional, caring and active roles. Your occupation does not decide suitability—your diagnosis, health and knee assessment do.</p>
+          <p className="scroll-lede">Knee osteoarthritis affects people in every kind of work. Suitability is decided by your diagnosis and assessment—not your job title.</p>
           <div className="role-tags scroll-roles">{roles.map(role=><span key={role}>{role}</span>)}</div>
           <Link className="text-link" href="/working-lives">Continue in the Working Lives page →</Link>
         </div>
