@@ -33,7 +33,7 @@ export function SiteHeader() {
           <Link href="/our-clinics">Our clinics</Link>
         </div>
       </details>
-      <a className="button button-gold header-button" href={bookingUrl} target="_blank" rel="noreferrer">Book an assessment ↗</a>
+      <a className="button button-gold header-button" href={bookingUrl} target="_blank" rel="noreferrer">Book an assessment ↗︎</a>
     </header>
   );
 }
@@ -43,7 +43,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-main">
         <div className="footer-brand"><Image src="/joint-care-logo-mark.webp" alt="Joint Care Clinics symbol" width={64} height={64} unoptimized /><div><strong>Joint Care Clinics</strong><span><ArthrosamidName /> assessment, treatment and aftercare</span></div></div>
-        <div className="footer-contact"><a href="tel:03334442013">0333 444 2013</a><a href="mailto:info@jointcareclinics.co.uk">info@jointcareclinics.co.uk</a><a href="https://jointcareclinics.co.uk/" target="_blank" rel="noreferrer">jointcareclinics.co.uk ↗</a></div>
+        <div className="footer-contact"><a href="tel:03334442013">0333 444 2013</a><a href="mailto:info@jointcareclinics.co.uk">info@jointcareclinics.co.uk</a><a href="https://jointcareclinics.co.uk/" target="_blank" rel="noreferrer">jointcareclinics.co.uk ↗︎</a></div>
       </div>
       <div className="footer-legal" aria-label="Legal information">
         <Link href="/privacy-policy">Privacy policy</Link>
@@ -52,8 +52,8 @@ export function SiteFooter() {
         <Link href="/medical-disclaimer">Medical disclaimer</Link>
       </div>
       <div className="footer-bottom">
-        <p>© 2026 Joint Care Clinics. <ArthrosamidName /> is intended for the symptomatic treatment of adults with knee osteoarthritis. Suitability requires clinical assessment. Individual results vary.</p>
-        <p className="footer-credit">Created by <a href="https://creatorstouchglobal.com/" target="_blank" rel="noreferrer">Creators Touch ↗</a></p>
+        <p>© 2026 Joint Care Clinics. <ArthrosamidName /> is intended for the symptomatic treatment of knee osteoarthritis in adults. Suitability requires a clinical assessment. Individual results vary.</p>
+        <p className="footer-credit">Created by <a href="https://creatorstouchglobal.com/" target="_blank" rel="noreferrer">Creators Touch ↗︎</a></p>
       </div>
     </footer>
   );
