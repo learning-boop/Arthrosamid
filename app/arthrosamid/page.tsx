@@ -26,7 +26,7 @@ export default function ArthrosamidPage() {
     <main id="main-content">
       <section className="inner-hero arthrosamid-hero">
         <SiteHeader />
-        <div className="shell inner-hero-copy"><p className="eyebrow eyebrow-light">Page two · <ArthrosamidName /></p><h1>A hydrogel implant. <em>Not a steroid.</em></h1><p>A simple explanation of what <ArthrosamidName /> is, how treatment is delivered and what the evidence can—and cannot—tell us.</p></div>
+        <div className="shell inner-hero-copy"><p className="eyebrow eyebrow-light">Page two · <ArthrosamidName /></p><h1>Support for <em>every step.</em></h1><p>A simple explanation of what <ArthrosamidName /> is, how treatment is delivered and what the evidence can—and cannot—tell us.</p></div>
       </section>
       <section className="section content-page">
         <div className="shell content-intro"><div><p className="eyebrow">What is <ArthrosamidName />?</p><h2>Designed for the symptoms of knee osteoarthritis.</h2></div><div><p><ArthrosamidName /> is a non-biodegradable injectable polyacrylamide hydrogel implant intended for the symptomatic treatment of knee osteoarthritis in adults.</p><p>It is not a cure, it does not regrow cartilage, and an individual response cannot be guaranteed. Clinical assessment is required before treatment.</p></div></div>

@@ -57,7 +57,7 @@ export default function Home() {
       <section className="scroll-panel scroll-arthrosamid" id="arthrosamid-overview">
         <div className="scroll-shade" /><div className="shell scroll-content scroll-content-left">
           <p className="eyebrow eyebrow-light">Understanding <ArthrosamidName /></p>
-          <h2>A hydrogel implant. <em>Not a steroid.</em></h2>
+          <h2>Support for <em>every step.</em></h2>
           <p className="scroll-lede"><ArthrosamidName /> is an injectable polyacrylamide hydrogel implant used to help manage the symptoms of knee osteoarthritis in appropriately selected adults following a clinical assessment.</p>
           <div className="scroll-facts">{arthrosamidFacts.map(([value,label])=><div key={value}><strong>{value}</strong><span>{label}</span></div>)}</div>
           <ul className="scroll-points"><li>Used to manage knee osteoarthritis symptoms—not a cure.</li><li>Designed to remain in the joint.</li><li>Normally delivered as an outpatient treatment.</li><li>Results vary and improvement cannot be guaranteed.</li></ul>
@@ -70,7 +70,7 @@ export default function Home() {
       <section className="scroll-panel scroll-joint-care" id="joint-care-overview">
         <div className="scroll-shade" /><div className="shell scroll-content scroll-content-right">
           <p className="eyebrow eyebrow-light">Joint Care Clinics</p>
-          <h2>Specialist care, <em>clearly explained.</em></h2>
+          <h2>Specialist care. <em>Personal guidance.</em></h2>
           <p className="scroll-lede">Joint Care Clinics provides assessment, image-guided treatment and connected aftercare across four UK locations. Arthrosamid<sup>®</sup> is discussed as one possible option—not a promised outcome.</p>
           <h3 className="mini-title">Why Joint Care Clinics?</h3>
           <div className="reason-grid">{clinicReasons.map(([n,title,copy])=><article key={n}><span>{n}</span><strong>{title}</strong><p>{copy}</p></article>)}</div>
@@ -81,7 +81,7 @@ export default function Home() {
       <section className="scroll-panel scroll-arthritis" id="arthritis-overview">
         <div className="scroll-shade" /><div className="shell scroll-content scroll-content-left">
           <p className="eyebrow eyebrow-light">Knee arthritis</p>
-          <h2>Understand the pain before choosing treatment.</h2>
+          <h2>Understand your knee. <em>Know your options.</em></h2>
           <p className="scroll-lede">Knee osteoarthritis may cause pain, stiffness, swelling and reduced movement. It can affect stairs, driving, sleep, work and family life.</p>
           <div className="arthritis-summary"><h3>How <ArthrosamidName /> may help</h3><p>It is used to help manage knee osteoarthritis symptoms in appropriately selected adults. It does not reverse arthritis or regrow cartilage, and suitability requires an individual assessment.</p></div>
           <div className="review-strip"><div><span>Google reviews</span><strong>Read current patient experiences directly</strong><p>Reviews describe individual experiences; they are not clinical evidence and cannot predict your result.</p></div><a href="https://www.google.com/search?q=Joint+Care+Clinics+Arthrosamid+reviews" target="_blank" rel="noreferrer">Open Google reviews ↗︎</a></div>
@@ -92,7 +92,7 @@ export default function Home() {
       <section className="scroll-panel scroll-working" id="working-lives-overview">
         <div className="scroll-shade" /><div className="shell scroll-content scroll-content-right">
           <p className="eyebrow eyebrow-light">For knees that work hard</p>
-          <h2>Your job may be different. <em>Your need to keep moving is shared.</em></h2>
+          <h2>Keep doing <em>what matters.</em></h2>
           <p className="scroll-lede">Knee osteoarthritis affects people in every kind of work. Suitability is decided by your diagnosis and assessment—not your job title.</p>
           <div className="role-tags scroll-roles">{roles.map(role=><span key={role}>{role}</span>)}</div>
           <Link className="text-link" href="/working-lives">Continue in the Working Lives page →</Link>
