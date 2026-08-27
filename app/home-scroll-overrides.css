@@ -2144,3 +2144,178 @@ small {
     font-size: 12px;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Uniform typography — every page                                     */
+/* Page taglines share one face and one size. Section headings,       */
+/* sub-headings, body copy, labels and figures each share one style   */
+/* across all six pages and the legal pages.                          */
+/* ------------------------------------------------------------------ */
+
+/* 1. Page taglines: one serif style on every hero. */
+.inner-hero h1,
+.working-hero-copy h1,
+.legal-hero h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(56px, 6.5vw, 88px);
+  font-weight: 400;
+  line-height: 0.97;
+  letter-spacing: -0.045em;
+}
+
+/* 2. Section headings: one serif style. */
+.content-page h2,
+.inner-section h2,
+.clinic-page h2,
+.availability h2,
+.legal-document h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(36px, 4vw, 54px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+/* 3. Sub-headings inside cards, steps and lists: one serif style. */
+.steps-grid h3,
+.pathway h3,
+.working-principles h3,
+.review-guidance h3,
+.clinic-story h3,
+.location-grid h3,
+.review-link-grid strong,
+.assessment-card strong,
+.clinic-disclaimer strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+/* 4. Body copy: one font, one size, on every page. */
+.content-intro > div:last-child > p,
+.intro-grid > p,
+.arthritis-fit p,
+.working-intro p,
+.clinic-story p,
+.clinic-story li,
+.pathway article p,
+.steps-grid p,
+.working-principles p,
+.review-guidance p,
+.references-panel li,
+.reviews-heading > p,
+.clinic-page-heading p,
+.clinic-address-demo,
+.clinic-cards small,
+.assessment-card small,
+.clinic-disclaimer p,
+.clinic-disclaimer a,
+.clinic-card-actions a,
+.clear-note p,
+.back-home a,
+.legal-hero-copy > p:not(.eyebrow),
+.legal-document p,
+.legal-back a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* 5. Small uppercase labels: one size. */
+.fact-ribbon span,
+.steps-grid span,
+.working-principles span,
+.review-guidance span,
+.pathway article > span,
+.clinic-cards article > span,
+.clinic-area,
+.assessment-card span,
+.review-link-grid span,
+.review-link-grid b,
+.legal-hero-copy small {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* 6. Statistic figures: one serif size, matching the home panels. */
+.fact-ribbon strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 32px;
+}
+
+@media (max-width: 720px) {
+  .inner-hero h1,
+  .working-hero-copy h1,
+  .legal-hero h1 {
+    font-size: clamp(31px, 8.4vw, 38px);
+    line-height: 1.06;
+  }
+
+  .content-page h2,
+  .inner-section h2,
+  .clinic-page h2,
+  .availability h2,
+  .legal-document h2 {
+    font-size: clamp(26px, 7.2vw, 32px);
+    line-height: 1.12;
+  }
+
+  .steps-grid h3,
+  .pathway h3,
+  .working-principles h3,
+  .review-guidance h3,
+  .clinic-story h3,
+  .location-grid h3,
+  .review-link-grid strong,
+  .assessment-card strong,
+  .clinic-disclaimer strong {
+    font-size: 21px;
+  }
+
+  .content-intro > div:last-child > p,
+  .intro-grid > p,
+  .arthritis-fit p,
+  .working-intro p,
+  .clinic-story p,
+  .clinic-story li,
+  .pathway article p,
+  .steps-grid p,
+  .working-principles p,
+  .review-guidance p,
+  .references-panel li,
+  .reviews-heading > p,
+  .clinic-page-heading p,
+  .clinic-address-demo,
+  .clinic-cards small,
+  .assessment-card small,
+  .clinic-disclaimer p,
+  .clinic-disclaimer a,
+  .clinic-card-actions a,
+  .clear-note p,
+  .back-home a,
+  .legal-hero-copy > p:not(.eyebrow),
+  .legal-document p,
+  .legal-back a {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .fact-ribbon span,
+  .steps-grid span,
+  .working-principles span,
+  .review-guidance span,
+  .pathway article > span,
+  .clinic-cards article > span,
+  .clinic-area,
+  .assessment-card span,
+  .review-link-grid span,
+  .review-link-grid b,
+  .legal-hero-copy small {
+    font-size: 12px;
+  }
+
+  .fact-ribbon strong {
+    font-size: 28px;
+  }
+}
