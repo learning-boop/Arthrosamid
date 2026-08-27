@@ -2007,3 +2007,140 @@ small {
     gap: 12px;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Uniform typography — one style per role                             */
+/* Taglines render in a single face and size (no italic half). All    */
+/* supporting copy and list points share one font and one size.       */
+/* Labels, sub-headings and statistic figures each share one style.   */
+/* ------------------------------------------------------------------ */
+.hero h1 em,
+.scroll-panel h2 em,
+.inner-hero h1 em,
+.working-hero-copy h1 em,
+.treatment-copy h2 em {
+  font-style: normal;
+}
+
+/* Supporting copy: one font, one size, everywhere. */
+.lede,
+.inner-hero-copy > p:last-child,
+.scroll-lede,
+.scroll-points li,
+.plain-points li,
+.more-note,
+.more-note a,
+.compact-references a,
+.reason-grid p,
+.arthritis-summary p,
+.review-strip p,
+.role-tags span,
+.role-board span,
+.text-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Small uppercase labels: one size. */
+.eyebrow,
+.scroll-panel .eyebrow,
+.mini-title,
+.scroll-facts span,
+.compact-references > span,
+.review-strip span,
+.scroll-location-list span,
+.scroll-location-list small {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Sub-headings inside panels: one serif style. */
+.reason-grid strong,
+.arthritis-summary h3,
+.review-strip strong,
+.scroll-location-list strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+/* Statistic figures: one serif size. */
+.scroll-facts strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 32px;
+}
+
+/* Partner cards: softly rounded squares with identical text in both. */
+.partner-card {
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.partner-card strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(30px, 2.4vw, 38px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.partner-card small {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  .lede,
+  .inner-hero-copy > p:last-child,
+  .scroll-lede,
+  .scroll-points li,
+  .plain-points li,
+  .more-note,
+  .more-note a,
+  .compact-references a,
+  .reason-grid p,
+  .arthritis-summary p,
+  .review-strip p,
+  .role-tags span,
+  .role-board span,
+  .text-link {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .eyebrow,
+  .scroll-panel .eyebrow,
+  .mini-title,
+  .scroll-facts span,
+  .compact-references > span,
+  .review-strip span,
+  .scroll-location-list span,
+  .scroll-location-list small {
+    font-size: 12px;
+  }
+
+  .reason-grid strong,
+  .arthritis-summary h3,
+  .review-strip strong,
+  .scroll-location-list strong {
+    font-size: 21px;
+  }
+
+  .scroll-facts strong {
+    font-size: 28px;
+  }
+
+  .partner-card {
+    border-radius: 16px;
+  }
+
+  .partner-card strong {
+    font-size: 19px;
+  }
+
+  .partner-card small {
+    font-size: 12px;
+  }
+}
