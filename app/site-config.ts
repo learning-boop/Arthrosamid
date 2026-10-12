@@ -1,10 +1,5 @@
 /**
  * Canonical public URL of the deployed site.
- *
- * Set NEXT_PUBLIC_SITE_URL in production (for example
- * https://arthrosamid.jointcareclinics.co.uk). On Vercel the project's
- * production URL is used automatically when the variable is not set.
- * Locally it falls back to the dev server.
  */
 function resolveSiteUrl(): string {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
@@ -18,6 +13,6 @@ function resolveSiteUrl(): string {
 
 export const siteUrl = resolveSiteUrl();
 
-export const siteName = "Arthrosamid® at Joint Care Clinics";
+export const siteName = "Arthrosamid\u00AE at Joint Care Clinics";
 
-export const bookingUrl = "https://jointcareclinics.co.uk/contact/";
+export const bookingUrl = "https://jointcarenortheast.co.uk/contact";
