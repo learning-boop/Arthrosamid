@@ -8,19 +8,24 @@ export default function Home() {
           HERO — full-viewport video with directional gradient overlay
       ──────────────────────────────────────────────────────────────── */}
       <section className="relative flex min-h-screen items-end overflow-hidden pb-28 sm:items-center sm:pb-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 h-full w-full object-cover"
-          poster="/01_Knee/Images/K02_Hands_holding_knee.jpg"
-        >
-          <source
-            src="/01_Knee/Videos/K08_Knee_discomfort_closeup.mp4"
-            type="video/mp4"
-          />
-        </video>
+        {/* Desktop banner (landscape) */}
+        <Image
+          src="/01_Knee/Images/Knee ultrasound examination in a modern clinic-1.png"
+          alt="Knee ultrasound examination in a modern clinic"
+          fill
+          priority
+          sizes="100vw"
+          className="hidden sm:block absolute inset-0 h-full w-full object-cover object-top"
+        />
+        {/* Mobile banner (portrait) */}
+        <Image
+          src="/01_Knee/Images/Knee ultrasound in a modern clinic-2.png"
+          alt="Knee ultrasound examination in a modern clinic"
+          fill
+          priority
+          sizes="100vw"
+          className="block sm:hidden absolute inset-0 h-full w-full object-cover"
+        />
 
         <div className="absolute inset-0 bg-deep-navy/80 sm:bg-transparent sm:bg-gradient-to-r sm:from-deep-navy/95 sm:via-deep-navy/75 sm:to-deep-navy/30" />
 
