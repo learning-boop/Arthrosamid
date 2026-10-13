@@ -1,92 +1,21 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Founders Grotesk";
-  src: url("../Founders_Grotesk/FoundersGrotesk-Light.otf") format("opentype");
-  font-weight: 300;
+  font-family: "Inter";
+  src: local("Inter"), local("Inter-Regular");
+  font-weight: 100 900;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Founders Grotesk";
-  src: url("../Founders_Grotesk/FoundersGrotesk-LightItalic.otf") format("opentype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Founders Grotesk";
-  src: url("../Founders_Grotesk/FoundersGrotesk-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Founders Grotesk";
-  src: url("../Founders_Grotesk/FoundersGrotesk-RegularItalic.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Founders Grotesk";
-  src: url("../Founders_Grotesk/FoundersGrotesk-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Founders Grotesk";
-  src: url("../Founders_Grotesk/FoundersGrotesk-MediumItalic.otf") format("opentype");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Founders Grotesk";
-  src: url("../Founders_Grotesk/FoundersGrotesk-Semibold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Founders Grotesk";
-  src: url("../Founders_Grotesk/FoundersGrotesk-SemiboldItalic.otf") format("opentype");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Founders Grotesk";
-  src: url("../Founders_Grotesk/FoundersGrotesk-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Founders Grotesk";
-  src: url("../Founders_Grotesk/FoundersGrotesk-BoldItalic.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic;
   font-display: swap;
 }
 
 @theme {
-  --color-slate-blue: #2F4E6F;
-  --color-deep-navy: #00152D;
-  --color-muted-blue: #98B1C4;
-  --color-light-grey: #D9D9D9;
-  --color-highlight-blue: #089EE6;
-  --color-highlight-purple: #7B72FC;
+  --color-navy: #15324B;
+  --color-teal: #087F8C;
+  --color-teal-dark: #066A75;
+  --color-body: #445463;
+  --color-pale: #F2F7F9;
+  --color-border: #E2E8ED;
+  --color-muted: #6B7D8D;
 }
 
 @layer base {
@@ -98,16 +27,30 @@
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 7rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   body {
     margin: 0;
-    font-family: "Founders Grotesk", system-ui, -apple-system, "Segoe UI", Roboto,
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif;
-    color: #1a1a2e;
+    color: var(--color-body);
     background: #ffffff;
+    line-height: 1.6;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }

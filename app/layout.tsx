@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { siteName, siteUrl } from "./site-config";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import MobileBottomBar from "./components/MobileBottomBar";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteName}`,
   },
   description:
-    "Arthrosamid is a single-injection treatment for knee osteoarthritis pain, available at Joint Care Clinics across the UK.",
+    "Explore Arthrosamid knee osteoarthritis treatment with RamaKrishna Rachaputi, Consultant Physiotherapist and MSK Sonographer, at Joint Care Clinics across the UK.",
   openGraph: {
     type: "website",
     locale: "en_GB",
@@ -27,7 +29,9 @@ export default function RootLayout({
     <html lang="en-GB">
       <body>
         <Navbar />
-        {children}
+        <div className="pt-[96px]">{children}</div>
+        <Footer />
+        <MobileBottomBar />
       </body>
     </html>
   );

@@ -18,6 +18,7 @@ const nextConfig: NextConfig = {
   // Pin the workspace root so stray lockfiles in parent folders are ignored.
   turbopack: { root: __dirname },
   reactStrictMode: true,
+  devIndicators: false,
   poweredByHeader: false,
   compress: true,
   images: {
