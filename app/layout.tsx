@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en-GB">
       <body>
         <Navbar />
-        <div className="pt-[96px]">{children}</div>
+        <div>{children}</div>
         <Footer />
         <MobileBottomBar />
       </body>

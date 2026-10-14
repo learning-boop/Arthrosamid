@@ -17,6 +17,23 @@ export const images = {
     width: 720,
     height: 540,
   },
+  heroBanners: [
+    {
+      desktop: "/01_Knee/Images/banner/Grandfather and grandchildren in autumn park-1.png",
+      mobile: "/01_Knee/Images/banner/Grandfather Watching Grandchildren Play-2.png",
+      alt: "The moments your knee is keeping you from — grandfather watching grandchildren play.",
+    },
+    {
+      desktop: "/01_Knee/Images/banner/A Thoughtful Pause on the Stairs.png",
+      mobile: "/01_Knee/Images/banner/Morning steps on the stairs.png",
+      alt: "Stairs. Chairs. The first steps in the morning.",
+    },
+    {
+      desktop: "/01_Knee/Images/banner/Personalized Knee Care Consultation.png",
+      mobile: "/01_Knee/Images/banner/Personalized knee consultation in a bright clinic.png",
+      alt: "Assessed individually. Delivered by a Consultant Physiotherapist & MSK Sonographer.",
+    },
+  ],
   portrait: {
     src: "/arthrosamid-detail-hero.webp",
     alt: "Clinician demonstrating injection technique on a knee joint model (illustrative image — placeholder for RamaKrishna Rachaputi portrait)",
